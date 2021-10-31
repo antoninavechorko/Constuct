@@ -232,20 +232,23 @@ main {
   background-color: white;
   min-height: 110px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__container {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+
 }
 
 .capabilities__content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin: 50px 0 70px 0;
 }
 
@@ -286,6 +289,7 @@ main {
   color: #48555B;
   letter-spacing: 0.2px;
   flex-basis: 37%;
+  flex-wrap: wrap;
 }
 
 .capabilities__content__button {
@@ -301,6 +305,7 @@ main {
   text-decoration: none;
   letter-spacing: 0.5px;
   padding-top: 11px;
+  flex-wrap: wrap;
 }
 
 .capabilities__content__button:hover {
@@ -363,6 +368,75 @@ main {
   letter-spacing: 0.19px;
   margin-bottom: 39px;
 }
+
+/* 900px */
+@media only screen and (max-width: 900px) {
+  .capabilities__list:nth-child(1n),
+  .capabilities__list:nth-child(2n) {
+    width: 100%;
+    justify-content: space-around;
+    }
+  .capabilities__item {
+    margin-bottom: 5px;
+  }
+  .capabilities__content {
+    justify-content: space-around;
+  }
+}
+
+/* 700px */
+@media only screen and (max-width: 700px) {
+  .capabilities__list {
+    flex-direction: column;
+    align-items: center;
+    }
+  .capabilities__item {
+    margin-bottom: 5px;
+  }
+  .capabilities__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .capabilities__content__title {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .capabilities__content__text {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* IPH X = 375px */
+@media only screen and (max-width: 375px) {
+  .capabilities__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .capabilities__item {
+    margin-bottom: 5px;
+  }
+  .capabilities__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .capabilities__content__title {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .capabilities__content__text {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ }
+
+
+
 
 
 
