@@ -244,8 +244,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 70px 0;
 }
 
 .capabilities__content__title {
@@ -263,6 +264,10 @@ main {
   letter-spacing: 2.3px;
 }
 
+.capabilities__content__title h2:hover {
+  color: black;
+}
+
 .decoration__line {
   width: 50px;
   height: 2px;
@@ -270,7 +275,7 @@ main {
 
 .content__decoration {
   background-color: #00A4E5;
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .capabilities__content__text {
@@ -280,7 +285,7 @@ main {
   line-height: 19px;
   color: #48555B;
   letter-spacing: 0.2px;
-  flex-basis: 36%;
+  flex-basis: 37%;
 }
 
 .capabilities__content__button {
@@ -295,6 +300,13 @@ main {
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.5px;
+  padding-top: 11px;
+}
+
+.capabilities__content__button:hover {
+  background-color: #08b0f3;
+  box-shadow: 1px 1px 3px rgb(158, 158, 158);
+  transform: scale(1.10);
 }
 
 .capabilities__list {
@@ -304,7 +316,7 @@ main {
   flex: 0 1 auto;
   row-gap: 10px;
   justify-content: space-between;
-  margin: 30px 0 110px 0;
+  margin-bottom: 110px;
 }
 
 .capabilities__item {
@@ -313,7 +325,13 @@ main {
   display: flex;
   flex-direction: column;
   border: 1px solid #E6E6E6;
-  padding: 38px 22px 39px 23px;
+  padding: 38px 21px 38px 21px;
+}
+
+.capabilities__item:hover {
+  border: 2px solid #08b0f3;
+  box-shadow: 1px 1px 3px rgb(158, 158, 158);
+  transform: scale(1.07);
 }
 
 .capabilities__item__pic {
@@ -332,6 +350,10 @@ main {
   margin-bottom: 13px;
 }
 
+.capabilities__item__title:hover {
+  color: #000000;
+}
+
 .capabilities__item__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -339,6 +361,7 @@ main {
   line-height: 23px;
   color: #48555B;
   letter-spacing: 0.19px;
+  margin-bottom: 39px;
 }
 
 
