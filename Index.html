@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +8,75 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header class="header" id="header">
-        <div class="header__container container"></div>
+        <div class="header__container container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="header_content">
+                <h1 class="header_title">PARTNER WITH KONSTRUCT</h1>
+                <p class="header_content_text">An award-winning construction management firm</p>
+                <p class="header_text">SCROLL DOWN</p>
+            </div>
+        </div>
     </header>
     <main>
+        <section class="navigaition">
+            <div class="navigation_container container">
+                <nav class="header__nav">
+                    <img src="img/logoblack.png" alt="logoblack" class="navigation_logo">
+                    <ul class="header__links">
+                        <li class="header__links__item"><a href="#header">HOME</a></li>
+                        <li class="header__links__item"><a href="#story">ABOUT</a></li>
+                        <li class="header__links__item"><a href="#capabilities">SERVICES</a></li>
+                        <li class="header__links__item"><a href="#">WORK</a></li>
+                        <li class="header__links__item"><a href="#promo">CONTACT</a></li>
+                    </ul>
+                    <div class="header_mobile">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </section>
         <section class="story" id="story">
-            <div class="story__container container"></div>
+            <div class="story__container container">
+                <div class="story__header">
+                    <div class="story__title">OUR STORY</div>
+                    <div class="story__line line__decoration"></div>
+                </div>
+                <div class="story__bocks">
+                    <div class="story__text">
+                        <h2 class="story__h2">
+                            Founded in 2011 by John Mathew Smith, <span class="story__colortext">Konstruct</span> has
+                            become
+                            the number one construction management firm
+                        </h2>
+                        <p class="story__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet,
+                            consectetuer
+                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                            erat.</p>
+                    </div>
+                    <div class="story__bitmap">
+                        <div class="story__photo">
+                            <img src="img/Bitmap.jpg" alt="WE PLAN" />
+                            <h3 class="photo__h3">WE<br />PLAN</h3>
+                        </div>
+                        <div class="story__photo">
+                            <img src="img/Bitmap-2.jpg" alt="WE MANAGE">
+                            <h3 class="photo__h3">WE<br />MANAGE</h3>
+                        </div>
+                        <div class="story__photo">
+                            <img src="img/Bitmap-3.jpg" alt="WE BUILD">
+                            <h3 class="photo__h3">WE<br />BUILD</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="capabilities" id="capabilities">
             <div class="capabilities__container container">
@@ -31,37 +91,42 @@
                     <a class="capabilities__content__button" href="#" download="filename">ALL SERVICES</a>
                 </div>
                 <ul class="capabilities__list">
-                        <li class="capabilities__item">
-                            <div class="capabilities__item__pic"><img src="img/projectIcon.png" alt="ProjectIcon"></div>
-                            <h2 class="capabilities__item__title">PROJECT AND CONSTRUCTION MANAGEMENT</h2>
-                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat.
-                            </p>
-                        </li>
-                        <li class="capabilities__item">
-                            <div class="capabilities__item__pic"><img src="img/maintanceIcon.png" alt="MaintancedIcon">
-                            </div>
-                            <h2 class="capabilities__item__title">STRUCTURE AUDIT AND MAINTENANCE</h2>
-                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat.
-                            </p>
-                        </li>
-                        <li class="capabilities__item">
-                            <div class="capabilities__item__pic"><img src="img/constuctionIcon.png"
-                                    alt="ConstuctionIcon"></div>
-                            <h2 class="capabilities__item__title">FACTORY CONSTRUCTION AND MODELING</h2>
-                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat.
-                            </p>
-                        </li>
+                    <li class="capabilities__item">
+                        <div class="capabilities__item__pic"><img src="img/projectIcon.png" alt="ProjectIcon"></div>
+                        <h2 class="capabilities__item__title">PROJECT AND CONSTRUCTION MANAGEMENT</h2>
+                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat.
+                        </p>
+                    </li>
+                    <li class="capabilities__item">
+                        <div class="capabilities__item__pic"><img src="img/maintanceIcon.png" alt="MaintancedIcon">
+                        </div>
+                        <h2 class="capabilities__item__title">STRUCTURE AUDIT AND MAINTENANCE</h2>
+                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat.
+                        </p>
+                    </li>
+                    <li class="capabilities__item">
+                        <div class="capabilities__item__pic"><img src="img/constuctionIcon.png" alt="ConstuctionIcon">
+                        </div>
+                        <h2 class="capabilities__item__title">FACTORY CONSTRUCTION AND MODELING</h2>
+                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat.
+                        </p>
+                    </li>
                 </ul>
             </div>
         </section>
         <section class="promo" id="promo">
-            <div class="promo__container container"></div>
+            <div class="promo__container container">
+                <div class="promo__container container">
+                    <h2 class="promo__title">Want to build something amazing?</h2>
+                    <a href="#" class="promo__link">GET IN TOUCH</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -130,6 +195,6 @@
             </div>
         </section>
     </footer>
+    <script src="js/index.js"></script>
 </body>
-
 </html>
