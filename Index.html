@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header" id="header">
         <div class="header__container container">
             <div class="logo">
-                <img src="img/logo.svg" alt="logo">
+                <img class="header_logo" src="img/logo.svg" alt="logo">
             </div>
             <div class="header_content">
                 <h1 class="header_title">PARTNER WITH KONSTRUCT</h1>
@@ -21,61 +23,56 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="navigaition">
-            <div class="navigation_container container">
-                <nav class="header__nav">
-                    <img src="img/logoblack.png" alt="logoblack" class="navigation_logo">
-                    <ul class="header__links">
-                        <li class="header__links__item"><a href="#header">HOME</a></li>
-                        <li class="header__links__item"><a href="#story">ABOUT</a></li>
-                        <li class="header__links__item"><a href="#capabilities">SERVICES</a></li>
-                        <li class="header__links__item"><a href="#">WORK</a></li>
-                        <li class="header__links__item"><a href="#promo">CONTACT</a></li>
-                    </ul>
-                    <div class="header_mobile">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </nav>
-            </div>
-        </section>
+   <main>
+    <section class="navigaition">
+        <div class="navigation_container container">
+            <nav class="mobile-menu">
+                <img src="img/logoblack.png" alt="logo">
+                <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+                <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="header" class="mobile-menu__link">HOME</a></li>
+                    <li class="mobile-menu__item"><a href="story" class="mobile-menu__link">ABOUT</a></li>
+                    <li class="mobile-menu__item"><a href="capabilities" class="mobile-menu__link">SERVICES</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">WORK</a></li>
+                    <li class="mobile-menu__item"><a href="promo" class="mobile-menu__link">CONTACT</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
         <section class="story" id="story">
             <div class="story__container container">
                 <div class="story__header">
-                    <div class="story__title">OUR STORY</div>
-                    <div class="story__line line__decoration"></div>
-                </div>
-                <div class="story__bocks">
-                    <div class="story__text">
-                        <h2 class="story__h2">
-                            Founded in 2011 by John Mathew Smith, <span class="story__colortext">Konstruct</span> has
-                            become
-                            the number one construction management firm
-                        </h2>
-                        <p class="story__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                            nibh
-                            euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet,
-                            consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                            erat.</p>
-                    </div>
-                    <div class="story__bitmap">
-                        <div class="story__photo">
-                            <img src="img/Bitmap.jpg" alt="WE PLAN" />
-                            <h3 class="photo__h3">WE<br />PLAN</h3>
-                        </div>
-                        <div class="story__photo">
-                            <img src="img/Bitmap-2.jpg" alt="WE MANAGE">
-                            <h3 class="photo__h3">WE<br />MANAGE</h3>
-                        </div>
-                        <div class="story__photo">
-                            <img src="img/Bitmap-3.jpg" alt="WE BUILD">
-                            <h3 class="photo__h3">WE<br />BUILD</h3>
-                        </div>
-                    </div>
-                </div>
+					<div class="story__title">OUR STORY</div>
+					<div class="story__line line__decoration"></div>
+				</div>
+				<div class="story__bocks">
+					<div class="story__text">
+						<h2 class="story__h2">
+							Founded in 2011 by John Mathew Smith, <span class="story__colortext">Konstruct</span> has become
+							the number one construction management firm
+						</h2>
+						<p class="story__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+							euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+							adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+					</div>
+					<div class="story__bitmap">
+						<div class="story__photo">
+							<img src="img/Bitmap.jpg" alt="WE PLAN" />
+							<h3 class="photo__h3">WE<br />PLAN</h3>
+						</div>
+						<div class="story__photo">
+							<img src="img/Bitmap-2.jpg" alt="WE MANAGE">
+							<h3 class="photo__h3">WE<br />MANAGE</h3>
+						</div>
+						<div class="story__photo">
+							<img src="img/Bitmap-3.jpg" alt="WE BUILD">
+							<h3 class="photo__h3">WE<br />BUILD</h3>
+						</div>
+					</div>
+				</div>
             </div>
         </section>
         <section class="capabilities" id="capabilities">
@@ -91,32 +88,32 @@
                     <a class="capabilities__content__button" href="#" download="filename">ALL SERVICES</a>
                 </div>
                 <ul class="capabilities__list">
-                    <li class="capabilities__item">
-                        <div class="capabilities__item__pic"><img src="img/projectIcon.png" alt="ProjectIcon"></div>
-                        <h2 class="capabilities__item__title">PROJECT AND CONSTRUCTION MANAGEMENT</h2>
-                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat.
-                        </p>
-                    </li>
-                    <li class="capabilities__item">
-                        <div class="capabilities__item__pic"><img src="img/maintanceIcon.png" alt="MaintancedIcon">
-                        </div>
-                        <h2 class="capabilities__item__title">STRUCTURE AUDIT AND MAINTENANCE</h2>
-                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat.
-                        </p>
-                    </li>
-                    <li class="capabilities__item">
-                        <div class="capabilities__item__pic"><img src="img/constuctionIcon.png" alt="ConstuctionIcon">
-                        </div>
-                        <h2 class="capabilities__item__title">FACTORY CONSTRUCTION AND MODELING</h2>
-                        <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat.
-                        </p>
-                    </li>
+                        <li class="capabilities__item">
+                            <div class="capabilities__item__pic"><img src="img/projectIcon.png" alt="ProjectIcon"></div>
+                            <h2 class="capabilities__item__title">PROJECT AND CONSTRUCTION MANAGEMENT</h2>
+                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat.
+                            </p>
+                        </li>
+                        <li class="capabilities__item">
+                            <div class="capabilities__item__pic"><img src="img/maintanceIcon.png" alt="MaintancedIcon">
+                            </div>
+                            <h2 class="capabilities__item__title">STRUCTURE AUDIT AND MAINTENANCE</h2>
+                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat.
+                            </p>
+                        </li>
+                        <li class="capabilities__item">
+                            <div class="capabilities__item__pic"><img src="img/constuctionIcon.png"
+                                    alt="ConstuctionIcon"></div>
+                            <h2 class="capabilities__item__title">FACTORY CONSTRUCTION AND MODELING</h2>
+                            <p class="capabilities__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat.
+                            </p>
+                        </li>
                 </ul>
             </div>
         </section>
@@ -128,7 +125,7 @@
                 </div>
             </div>
         </section>
-    </main>
+   </main>
     <footer class="footer">
         <section class="footer__signup">
             <div class="signup__container container">
@@ -144,8 +141,7 @@
                 <div class="contacts__content">
                     <h3 class="contacts__title contacts__content__title">COMPANY</h3>
                     <div class="contacts__logo"><img src="img/logo.svg" alt="logo"></div>
-                    <p class="contacts__content__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    <p class="contacts__content__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                 </div>
                 <div class="contacts__links">
                     <h3 class="contacts__title contacts__links__title">LINKS</h3>
@@ -178,12 +174,9 @@
                             <a href="mailto:info@konstruct.com">info@konstruct.com</a>
                         </div>
                         <ul class="contacts__info__social">
-                            <li class="info__social__item"><a target="_blank" href="https://www.facebook.com/"><img
-                                        src="img/facebook.png" alt="facebook"></a></li>
-                            <li class="info__social__item"><a target="_blank" href="https://twitter.com/"><img
-                                        src="img/twitter.png" alt="twitter"></a></li>
-                            <li class="info__social__item"><a target="_blank" href="https://www.google.by/"><img
-                                        src="img/google.png" alt="google+"></a></li>
+                            <li class="info__social__item"><a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a></li>
+                            <li class="info__social__item"><a target="_blank" href="https://twitter.com/"><img src="img/twitter.png" alt="twitter"></a></li>
+                            <li class="info__social__item"><a target="_blank" href="https://www.google.by/"><img src="img/google.png" alt="google+"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -195,6 +188,6 @@
             </div>
         </section>
     </footer>
-    <script src="js/index.js"></script>
 </body>
+
 </html>
